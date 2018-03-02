@@ -68,15 +68,19 @@ func FindBeerByID(ID int) Beer {
 	return result
 }
 
-func FindBarrelFromBreweryByBeer(beer *Beer) (Barrel, int) {
+func FindBarrelFromBeerID(ID int, barrels []Barrel) (Barrel, int) {
 	var result Barrel
 	var idx = -1
-	for i, barrel := range breweryBarrels {
-		if barrel.Beer.ID == beer.ID {
+	for i, barrel := range barrels {
+		if barrel.Beer.ID == ID {
 			result = barrel
 			idx = i
 			break
 		}
 	}
 	return result, idx
+}
+
+func FindBarrelFromBreweryByBeer(beer *Beer) (Barrel, int) {
+	return FindBarrelFromBeerID(beer.ID, breweryBarrels)
 }
