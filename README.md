@@ -1,4 +1,4 @@
-# Getting started Turorial - Restful APIs with Golang
+# Getting started Tutorial - Restful APIs with Golang
 
 After couple years of developing web applications, I wanted something new, something different. I was looking for new technologies which have good support, good community and good perspectives. You will say that it may sounds obvious, nobody will turn to Basic Programming right now and you are right. But I needed a nice introduction for my tutorial.
 
